@@ -10,12 +10,16 @@
 # next.js
 /.next/
 /out/
+.vercel
+.turbo
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
+.cache
 *.pem
 
 # debug
