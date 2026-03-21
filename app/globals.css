@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #080b0f;
+  --fg: #e8ecf0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased dark:bg-ink-950 dark:text-ink-100;
+  background-image: radial-gradient(
+      ellipse 120% 80% at 50% -20%,
+      rgba(232, 168, 124, 0.14),
+      transparent
+    ),
+    linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+  min-height: 100vh;
+}
+
+.dark body {
+  background-image: radial-gradient(
+      ellipse 120% 80% at 50% -20%,
+      rgba(232, 168, 124, 0.12),
+      transparent
+    ),
+    linear-gradient(180deg, #080b0f 0%, #0f1419 100%);
+}
+
+::selection {
+  @apply bg-accent/30 text-ink-50;
+}
